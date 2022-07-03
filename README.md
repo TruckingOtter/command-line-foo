@@ -1,7 +1,7 @@
 
 # The Art of Command Line
 
-![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](cowsay.png)
+![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](images/cowsay.png)
 
 Fluency on the command line is a skill often neglected or considered arcane, but it improves your flexibility and productivity as an engineer in both obvious and subtle ways. This is a selection of notes and tips on using the command-line that we've found useful when working on Linux. Some tips are elementary, and some are fairly specific, sophisticated, or obscure. This page is not long, but if you can use and recall all the items here, you know a lot.
 
@@ -38,19 +38,29 @@ but it has since moved to GitHub, where people more talented than the original a
 
 - Not all commands are included with a standard install in a Unix based OS, and may require you to download new packages in order for you to use them.
 
-- we strongly urge you to follow up and learn more about the commands listed here. At the end of the day this is only just an overview of what's out there, and it's intended to point you in the right direction and get you started.
+- We strongly urge you to follow up and learn more about the commands listed here. At the end of the day this is only just an overview of what's out there, and it's intended to point you in the right direction and get you started.
 
- - Note: You can find helpful breakdowns of the commands, options, pipes etc, that you're looking for at [Explainshell](http://explainshell.com/).
+  - *Note: You can find helpful breakdowns of the commands, options, pipes etc, that you're looking for at [Explainshell.com](http://explainshell.com/), and the [More Resources](#more-resources) section.*
 
 
 ## Basics
+
+### RTFD.
+Probably the most important skill to have in life is finding information. And, the world of computers is not going to be the exception to that rule.
+
+- The place to start with regards to the command line would have to be `man man`. `man` pages are human readable, but at times may seem counter intuitive. That's usually due to the fact that the option or switch that you are looking for may not always be the first one you see. Some commands can be quite complex with a large variety of options, so keep in mind that man pages will often have different sections for you to explore.
+
+- An other good tool is ye' ol' web search engine. there are many websites out there that will help you along the way.
+
+### Bash
+- Learn basic `bash` commands. Unless you already have a favourite command shell, you're probably going to be using `bash`.
 
 - Learn basic Bash. Actually, type `man bash` and at least skim the whole thing; it's pretty easy to follow and not that long. Alternate shells can be nice, but Bash is powerful and always available (learning *only* zsh, fish, etc., while tempting on your own laptop, restricts you in many situations, such as using existing servers).
 
 - Learn at least one text-based editor well. The `nano` editor is one of the simplest for basic editing (opening, editing, saving, searching). However, for the power user in a text terminal, there is no substitute for Vim (`vi`), the hard-to-learn but venerable, fast, and full-featured editor. Many people also use the classic Emacs, particularly for larger editing tasks. (Of course, any modern software developer working on an extensive project is unlikely to use only a pure text-based editor and should also be familiar with modern graphical IDEs and tools.)
 
-- Finding documentation:
-  - Know how to read official documentation with `man` (for the inquisitive, `man man` lists the section numbers, e.g. 1 is "regular" commands, 5 is files/conventions, and 8 are for administration). Find man pages with `apropos`.
+# Edit Line
+
   - Know that some commands are not executables, but Bash builtins, and that you can get help on them with `help` and `help -d`. You can find out whether a command is an executable, shell builtin or an alias by using `type command`.
   - `curl cheat.sh/command` will give a brief "cheat sheet" with common examples of how to use a shell command.
 
@@ -602,6 +612,7 @@ These items are relevant *only* on Windows.
 
 ## More resources
 
+- [Explainshell.com](http://explainshell.com/):
 - [awesome-shell](https://github.com/alebcay/awesome-shell): A curated list of shell tools and resources.
 - [awesome-osx-command-line](https://github.com/herrbischoff/awesome-osx-command-line): A more in-depth guide for the macOS command line.
 - [Strict mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/) for writing better shell scripts.
