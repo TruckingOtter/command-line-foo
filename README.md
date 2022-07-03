@@ -1,5 +1,4 @@
-
-# The Art of Command Line
+# Command Line Foo
 
 ![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](images/cowsay.png)
 
@@ -52,10 +51,22 @@ Probably the most important skill to have in life is finding information. And, t
 
 - An other good tool is ye' ol' web search engine. there are many websites out there that will help you along the way.
 
-### Bash
-- Learn basic `bash` commands. Unless you already have a favourite command shell, you're probably going to be using `bash`.
+- `--help` and sometimes `-h`.
 
-- Learn basic Bash. Actually, type `man bash` and at least skim the whole thing; it's pretty easy to follow and not that long. Alternate shells can be nice, but Bash is powerful and always available (learning *only* zsh, fish, etc., while tempting on your own laptop, restricts you in many situations, such as using existing servers).
+### Bash
+- Familiarize yourself with `bash`. Even if you already have a favourite command shell, you're probably going to be using `bash` bash at some point. A great place to start would be `man bash`. It's at least worth a skim, it's pretty easy to follow, and not that long.
+
+### Navigation
+
+### Manipulating Streams
+
+### File Manipulation
+
+### Directories
+
+### Editing Text
+
+
 
 - Learn at least one text-based editor well. The `nano` editor is one of the simplest for basic editing (opening, editing, saving, searching). However, for the power user in a text terminal, there is no substitute for Vim (`vi`), the hard-to-learn but venerable, fast, and full-featured editor. Many people also use the classic Emacs, particularly for larger editing tasks. (Of course, any modern software developer working on an extensive project is unlikely to use only a pure text-based editor and should also be familiar with modern graphical IDEs and tools.)
 
